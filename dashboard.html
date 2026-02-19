@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h1>Changeover Dashboard</h1>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Total Changeovers</h3>
+<p id="totalChangeovers">0</p>
+</div>
+
+<div class="card">
+<h3>Avg Changeover Duration</h3>
+<p id="avgDuration">0 min</p>
+</div>
+
+<div class="card">
+<h3>Avg Bucket Loss</h3>
+<p id="avgLoss">0 pcs</p>
+</div>
+
+<div class="card">
+<h3>Ramp-Up Loss</h3>
+<p id="rampLoss">0%</p>
+</div>
+
+</div>
+
+<br><br>
+
+<button onclick="startChangeover()">Start New Changeover</button>
+
+<button onclick="viewChangeovers()">View Past Changeovers</button>
+
+<button onclick="viewAnalytics()">Analytics</button>
+
+<button onclick="logout()">Logout</button>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Start New Changeover</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h2>Start New Changeover</h2>
+
+<label>Line Name</label>
+<select id="line">
+
+<option value="Line 1">Line 1</option>
+<option value="Line 2">Line 2</option>
+<option value="Line 3">Line 3</option>
+
+</select>
+
+<label>From Style</label>
+<input type="text" id="fromStyle">
+
+<label>To Style</label>
+<input type="text" id="toStyle">
+
+<label>Planned Hourly Target</label>
+<input type="number" id="target">
+
+<label>SAM</label>
+<input type="number" id="sam">
+
+<button onclick="startChangeover()">Start Changeover</button>
+
+<button onclick="cancel()">Cancel</button>
+
+<script src="js/changeover.js"></script>
+
+</body>
+
+</html>

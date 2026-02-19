@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Live Changeover Tracking</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h2>Live Changeover Tracking</h2>
+
+<h3>Milestones</h3>
+
+<button onclick="markT2()">Mark T2 - First Machine Ready</button>
+
+<p id="T2display"></p>
+
+<button onclick="markT3()">Mark T3 - Majority Ready</button>
+
+<p id="T3display"></p>
+
+<button onclick="markT4()">Mark T4 - First Good Piece</button>
+
+<p id="T4display"></p>
+
+<br><br>
+
+<h3>Activity Log</h3>
+
+<select id="activityCategory">
+
+<option>Internal</option>
+<option>External</option>
+<option>Waiting</option>
+<option>Adjustment</option>
+
+</select>
+
+<input type="text" id="activityDescription" placeholder="Description">
+
+<button onclick="addActivity()">Add Activity</button>
+
+<table border="1" width="80%" align="center">
+
+<thead>
+
+<tr>
+<th>Category</th>
+<th>Description</th>
+<th>Time</th>
+</tr>
+
+</thead>
+
+<tbody id="activityTable"></tbody>
+
+</table>
+
+<br><br>
+
+<button onclick="goToRampup()">Next: Ramp-Up Tracking</button>
+
+<script src="js/changeover.js"></script>
+
+</body>
+
+</html>
+

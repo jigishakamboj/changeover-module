@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Ramp-Up Tracking</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h2>Ramp-Up Tracking</h2>
+
+<label>Hour 1 Output</label>
+<input type="number" id="hour1">
+
+<label>Hour 2 Output</label>
+<input type="number" id="hour2">
+
+<label>Hour 3 Output (optional)</label>
+<input type="number" id="hour3">
+
+<br><br>
+
+<button onclick="calculateLoss()">Calculate Loss</button>
+
+<p id="planned"></p>
+
+<p id="actual"></p>
+
+<p id="loss"></p>
+
+<br>
+
+<button onclick="closeChangeover()">Close Changeover</button>
+
+<script src="js/config.js"></script>
+
+<script src="js/sheets.js"></script>
+
+<script src="js/rampup.js"></script>
+
+</body>
+
+</html>
